@@ -1,0 +1,13 @@
+<%= form_for [@post, Comment.new ] do |f| %>
+  <p>
+
+    <%= f.label :name, "Name" %><br />
+    <%= f.text_field :name %><br />
+    <%= f.label :body, "Comment Description" %><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit "Login via Facebook to add a Comment" %>
+  </p>
+<% end %>
